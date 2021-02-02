@@ -1,6 +1,8 @@
 install.packages(
+    c(
   "dplyr",
   "kableExtra",
   "knitr",
   "rmarkdown"
+    )
 )
