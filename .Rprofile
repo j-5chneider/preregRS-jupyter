@@ -1,7 +1,5 @@
-# setHook("rstudio.sessionInit", function(newSession) {
-#     if (newSession)
-#         rstudioapi::navigateToFile('preregRS.Rmd', line = -1L, column = -1L)
-# }, action = "append")
-print("hello")
+print("HELLO")
+print("Please open the file 'preregRS.Rmd'.")
+print("In order to compile 'preregRS.Rmd' to HTML click on the 'knit' button above the editor pane.")
 library(utils)
-#file.edit('preregRS.Rmd')
+file.edit("preregRS.Rmd")
