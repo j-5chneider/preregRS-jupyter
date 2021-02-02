@@ -13,6 +13,7 @@ Depends:
     dplyr,
     kableExtra,
     knitr,
-    rmarkdown
+    rmarkdown,
+    utils
 Encoding: UTF-8
 LazyData: true
