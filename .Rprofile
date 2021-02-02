@@ -4,4 +4,4 @@
 # }, action = "append")
 print("hello")
 library(utils)
-file.edit('preregRS.Rmd')
+#file.edit('preregRS.Rmd')
