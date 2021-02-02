@@ -3,6 +3,7 @@ install.packages(
   "dplyr",
   "kableExtra",
   "knitr",
-  "rmarkdown"
+  "rmarkdown",
+  "utils"
     )
 )
