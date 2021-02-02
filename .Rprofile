@@ -3,3 +3,4 @@
 #         rstudioapi::navigateToFile('preregRS.Rmd', line = -1L, column = -1L)
 # }, action = "append")
 print("hello")
+file.edit('preregRS.Rmd')
