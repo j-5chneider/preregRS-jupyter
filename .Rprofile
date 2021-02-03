@@ -19,5 +19,3 @@ HELLO :)
 - Please open the file 'preregRS.Rmd'.
 - In order to compile 'preregRS.Rmd' to HTML click on the 'knit' button above the editor pane.
 ")
-library(utils)
-do.call("file.edit", list("preregRS.Rmd"))
