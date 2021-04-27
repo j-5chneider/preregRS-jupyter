@@ -1,0 +1,124 @@
+---
+title: "preregRS guides preregistration"  
+subtitle: "Facilitating Open Science Practices for research syntheses"
+author: 
+  - Jürgen Schneider, Iris Backfisch, Andreas Lachner
+date: "20. May 2021"
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+    logo: www/logo.gif
+    css:  www/style.css
+    highlight: pygments
+bibliography: www/references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message=FALSE, 
+                      warning=FALSE)
+# download.file("https://drive.google.com/uc?export=download&id=1wuMqL_Z8T9rxuGvn0VP6siag90kHDm2O",
+#               "slides/www/references.bib", overwrite = T)
+library(fontawesome)
+# library(rmarkdown)
+```
+
+## The Problem
+```{r}
+# <br /> 
+# `r fa(name = "eye", fill="grey")` 
+```
+
+
+* inferences we can draw from research syntheses depend on the decisions in the research process<br /><span class="mysource">[@ioannidis.2016]</span><br /><br />
+* Famously: "Garbage in garbage out" <br /><span class="mysource">[@eggeretal.2001]</span>
+ 
+## The Problem
+
+* transparency concerning the research process allow for critical evaluation of these research syntheses and enhance reproducibility <br /><span class="mysource">[@wilson.2019]</span><br /><br />
+* degrees of freedom, e.g. in
+  + literature search
+  + eligibility criteria
+  + strategy for data synthesis 
+
+
+<div class="notes">
+* Changes within the scope of literature search, such as altering used databases or updating the search string may result in a difference of several hundred hits. Readers that are unaware of changes and reasons of change in the literature search lack important information to critically evaluate the continuation or termination of literature search.
+* Updates to eligibility criteria is a standard procedure when conducting research synthesis. However, changes need to be made transparent, justified, and potential consequences reasoned as they directly determine the pool of literature that form the basis of the synthesis.
+* Readers’ inferences to be drawn from the paper heavily depend on their ability to distinguish between exploratory parts of data analysis that may develop in the process of a research synthesis and confirmatory parts assumed a priori.
+</div>
+
+## The Problem
+
+* __Open Science__ enables researchers to conduct transparent and reproducible research <br /><span class="mysource">[@pageetal.2021]</span><br /><br />
+* __preregistration__ makes research syntheses as a process transparent<br /><span class="mysource">[@atkinsonetal.2015; @stewartetal.2012]</span><br /><br />
+* preregistration of research syntheses is __not yet standard__ procedure (outside of health)<br /><span class="mysource">[@ioannidis.2016; @molleretal.2018]</span>
+
+## Existing solutions? | important frameworks
+
+
+* PROSPERO <br /><span class="mysource">[@boothetal.2012]</span><br /><br />
+* PRISMA-P <br /><span class="mysource">[@moheretal.2015]</span><br /><br />
+* MARS <br /><span class="mysource">[@appelbaumetal.2018]</span><br /><br />
+
+"Preregistration is hard" <br />
+e.g. including power analysis, coding manual, data analysis strategy<span class="mysource">[@noseketal.2019]</span><br /><br />
+
+If we want culture change, we need to "make it easy" <br /><span class="mysource">[@nosek.2019]</span>
+
+## Our Aims
+
+* utilize existing frameworks and standards
+* make them accessible & applicable
+  - for meta-analyses and systematic reviews 
+  - for all disciplines
+* enable seamless integration of data analyses, files, figures, text, ...
+* ensure compatibility with markup languages
+
+-> produce __standalone__ HTML/PDF
+
+## preregRS | R package
+
+preregRS = R Markdown template (install via package)
+
+* provides structure: synthesize the structure of PROSPERO, PRISMA-P and MARS
+* guides users through the process (additional information on standards available)
+* fill out like a form: provides placeholders
+* Rmd enables you to 
+  - include R code (e.g. for power analyses, planned analysis code) and its output
+  - encode files (e.g. separate coding system)
+  - include figures, iframes, latex, ...
+  - include interactive content (e.g. plotly)
+  - compile to standalone HTML/PDF
+
+# Demo
+
+<div class="fullscreenac"></div>
+
+
+## Demo | check out...
+
+1. an empty template (compiled to HTML): [bit.ly/preregRS-HTML](https://bit.ly/preregRS-HTML)  
+2. a Jupyter-Notebook with preregRS template available: [bit.ly/preregRS-jupyter](https://bit.ly/preregRS-jupyter)  
+3. an example of a preregistration: [bit.ly/preregRS-example](https://bit.ly/preregRS-example)  
+
+
+# {-}
+
+
+<div id="refs"></div>
+
+
+
+# &nbsp;
+__Images:__  
+(in order of appearance)  
+  
+<span style="font-size:.7em;">
+
+</span>
