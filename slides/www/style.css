@@ -1,9 +1,13 @@
+strong {
+  color: #237986;
+}
+
 slides > slide:not(.nobackground):after {
   content: '';
 }
 
 .title-slide {
-  background-image: url("title-bg.jpg");
+  background-image: url("title-bg1.jpg");
   background-size: cover;
 }
 
@@ -35,7 +39,7 @@ code {
 */
 
 
-/* logo title slide */
+/* logo title slide ------------------------------------------------------ */
 .plogo {
   height: 40px;
   float: left;
@@ -44,18 +48,18 @@ code {
 }
 
 .gdbar img {
-  width: 200px !important;
-  height: 51px !important;
+  width: 240px !important;
+  height: 114px !important;
   margin: 8px 8px;
 }
 
 .gdbar {
-  width: 330px !important;
-  height: 67px !important;
+  width: 380px !important;
+  height: 130px !important;
   background: #fff !important;
 }
 
-/* footer logo */
+/* footer logo ----------------------------------------------------------- */
 slides > slide:not(.nobackground):before {
   width: 0;
   height: 0;
@@ -93,7 +97,7 @@ a:active {
 }
 
 
-/* references on slides */
+/* references on slides --------------------------------------------------- */
 .mysource {
   float: right;
   opacity: .6;
@@ -117,7 +121,7 @@ a:active {
 
 
 
-/* divs for slide design */
+/* divs for slide design ----------------------------------------------------------- */
 .container {
     justify-content: center;
     display: flex;
@@ -129,12 +133,11 @@ a:active {
     text-align: center;
 }
 
-.box60 {
-    margin: 20px;
-    width: 60%;
-    text-align: center;
+.box40 {
+    width: 40%;
 }
 
+/*
 .box45l {
   width: 45%;
   margin-right: 20px;
@@ -144,7 +147,24 @@ a:active {
   width: 45%;
   margin-left: 53%;
 }
+*/
 
+.box49 {
+    margin: 10px;
+    width: 49%;
+}
+
+.box60 {
+    width: 60%;
+}
+
+.box60c {
+    margin: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+/*
 .box60l {
   width: 60%;
   margin-right: 20px;
@@ -177,7 +197,7 @@ a:active {
   height: 100%;
   padding-top: 25%;
   background-color: #d49c22;
-  /*opacity: .5;*/
+  /*opacity: .5;*/ /*
   z-index: -1;
   text-align: center;
   font-size: 3.5em;
@@ -185,10 +205,7 @@ a:active {
   color: white;
 }
 
-
-.myref > p {
-  font-size: 10px;
-}
+*/
 
 
 /*
@@ -198,10 +215,48 @@ slides > slide.backdrop {
 */
 
 
-/* single slides */
+/* single slides ----------------------------------------------- */
 
+#sec-tab {
+  position: absolute;
+  left: 60%;
+  top:0;
+  width: 40%;
+  height: 100%;
+  background-image: url("sec-tab.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
 
-/* CODE HIGHLIGHT */
+#add-info {
+  position: absolute;
+  left: 60%;
+  top:0;
+  width: 40%;
+  height: 100%;
+  background-image: url("add-info.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+#add-text {
+  position: absolute;
+  left: 60%;
+  top:0;
+  width: 40%;
+  height: 100%;
+  background-image: url("add-text.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+/* CODE HIGHLIGHT ---------------------------------------------- */
 /* a comment */
 .prettyprint .com {
   color: #BF1932;
@@ -233,6 +288,10 @@ slides > slide.backdrop {
 
 
 /* REFERENCES */
+
+.myref > p {
+  font-size: 10px;
+}
 
 #refs {
   position: absolute;

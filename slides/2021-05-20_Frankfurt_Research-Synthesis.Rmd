@@ -3,12 +3,12 @@ title: "preregRS guides preregistration"
 subtitle: "Facilitating Open Science Practices for research syntheses"
 author: 
   - Jürgen Schneider, Iris Backfisch, Andreas Lachner
-date: "20. May 2021"
+date: 20. May 2021 
 output:
   ioslides_presentation:
     widescreen: true
     smaller: true
-    logo: www/logo.gif
+    logo: www/logo1.gif
     css:  www/style.css
     highlight: pygments
 bibliography: www/references.bib
@@ -19,6 +19,7 @@ editor_options:
 
 
 ```{r setup, include=FALSE}
+  # "`r parse(text=paste('20^text', ' May 2021'))`"
 knitr::opts_chunk$set(echo = FALSE,
                       message=FALSE, 
                       warning=FALSE)
@@ -30,24 +31,28 @@ library(fontawesome)
 
 ## The Problem
 ```{r}
-# <br /> 
-# `r fa(name = "eye", fill="grey")` 
+# <br />
+# `r fa(name = "eye", fill="grey")`
 ```
 
 
-* inferences we can draw from research syntheses depend on the decisions in the research process<br /><span class="mysource">[@ioannidis.2016]</span><br /><br />
-* Famously: "Garbage in garbage out" <br /><span class="mysource">[@eggeretal.2001]</span>
- 
-## The Problem
+<br />
+`r fa(name = "map-signs", fill="grey", height = "20px")`  __inferences__ we can draw from research syntheses __depend on the decisions__ in the research process<br /><span class="mysource">[@ioannidis.2016]</span>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_e.g. "garbage in garbage out"_ <br /><span class="mysource">[@eggeretal.2001]</span>
 
-* transparency concerning the research process allow for critical evaluation of these research syntheses and enhance reproducibility <br /><span class="mysource">[@wilson.2019]</span><br /><br />
-* degrees of freedom, e.g. in
-  + literature search
-  + eligibility criteria
-  + strategy for data synthesis 
+<br /><br /><br />
+`r fa(name = "search", fill="grey", height = "20px")` __transparency__ allow for critical evaluation & enhance reproducibility <br /><span class="mysource">[@wilson.2019]</span>
+
+<br /><br /><br />
+`r fa(name = "expand-arrows-alt", fill="grey", height = "20px")` __degrees of freedom__, e.g. in  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- literature search  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- eligibility criteria  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- strategy for data synthesis 
 
 
 <div class="notes">
+* Metaanalysen häufig als objektiv und "die Wahrheit" wahrgenommen werden
 * Changes within the scope of literature search, such as altering used databases or updating the search string may result in a difference of several hundred hits. Readers that are unaware of changes and reasons of change in the literature search lack important information to critically evaluate the continuation or termination of literature search.
 * Updates to eligibility criteria is a standard procedure when conducting research synthesis. However, changes need to be made transparent, justified, and potential consequences reasoned as they directly determine the pool of literature that form the basis of the synthesis.
 * Readers’ inferences to be drawn from the paper heavily depend on their ability to distinguish between exploratory parts of data analysis that may develop in the process of a research synthesis and confirmatory parts assumed a priori.
@@ -55,46 +60,174 @@ library(fontawesome)
 
 ## The Problem
 
-* __Open Science__ enables researchers to conduct transparent and reproducible research <br /><span class="mysource">[@pageetal.2021]</span><br /><br />
+* __Open Science Practices__ help to make research transparent and reproducible<br /><span class="mysource">[@pageetal.2021]</span><br /><br />
 * __preregistration__ makes research syntheses as a process transparent<br /><span class="mysource">[@atkinsonetal.2015; @stewartetal.2012]</span><br /><br />
-* preregistration of research syntheses is __not yet standard__ procedure (outside of health)<br /><span class="mysource">[@ioannidis.2016; @molleretal.2018]</span>
+* preregistration of research syntheses is __not standard__ procedure yet (outside of health)<br /><span class="mysource">[@ioannidis.2016; @molleretal.2018]</span>
 
 ## Existing solutions? | important frameworks
 
 
-* PROSPERO <br /><span class="mysource">[@boothetal.2012]</span><br /><br />
-* PRISMA-P <br /><span class="mysource">[@moheretal.2015]</span><br /><br />
-* MARS <br /><span class="mysource">[@appelbaumetal.2018]</span><br /><br />
+* PROSPERO <br /><span class="mysource">[@boothetal.2012]</span><br />
+* PRISMA-P <br /><span class="mysource">[@moheretal.2015]</span><br />
+* MARS <br /><span class="mysource">[@appelbaumetal.2018]</span><br /><br /><br />
 
-"Preregistration is hard" <br />
-e.g. including power analysis, coding manual, data analysis strategy<span class="mysource">[@noseketal.2019]</span><br /><br />
+`r fa(name = "exclamation-circle", fill="grey", height = "20px")` discipline-specific frameworks <br /><br /><br />
 
+`r fa(name = "exclamation-circle", fill="grey", height = "20px")` "Preregistration is hard" <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. including power analysis, coding manual, data analysis strategy<span class="mysource">[@noseketal.2019]</span>
+
+
+<div class="notes">
+* betonen, dass die Fachspezifisch sind, nicht für behavioral science passen, und dass MARS eher ne guideline zum Manuskriptschreiben ist
+* 
+</div>
+
+## Existing solutions? | important frameworks
+
+<div class="container">
+<div class="box30">
+\
+\
+\
+\
+\
 If we want culture change, we need to "make it easy" <br /><span class="mysource">[@nosek.2019]</span>
+</div>
+
+<div class="box60">
+![](www/change.webp)
+</div>
+</div>
+
+<div class="notes">
+da Metaanalysen oft von "Themenexperten" und nicht Methodenexperten gemacht werden und daher Respekt/Angst vor der Aufgabe bestehen könnte
+</div>
+
+
+## Our Context
+<div class="container">
+<div class="box49" style="text-align:center;">
+![](www/tuedilb.svg){width=50%}  
+__<span style="font-size:2em; font-weight:900">TüDiLB</span>__  
+<span style="font-size:1em; font-weight:10">[www.tuedilb-tuebingen.de](https://www.tuedilb-tuebingen.de/)</span>  
+\
+\
+Joint project of  
+<span style="font-weight:bold; color:#a51e37">University of Tübingen</span> and  
+<span style="font-weight:bold; color:#ff6900">Leibniz-Institut für Wissensmedien (IWM)</span>
+</div>
+<div class="box49" style="margin-top:10%">
+__Research group "Transformation & Translation"__<br /><br />
+`r fa(name = "arrow-circle-right", fill="grey", height = "20px")` research syntheses on the topic of digitization<br /><br />
+`r fa(name = "arrow-circle-right", fill="grey", height = "20px")` in teaching and teacher education
+</div>
+</div>
+
+
 
 ## Our Aims
 
-* utilize existing frameworks and standards
-* make them accessible & applicable
+* utilize __existing__ frameworks and __standards__<br /><br />
+* make them __accessible__ & __applicable__
   - for meta-analyses and systematic reviews 
-  - for all disciplines
-* enable seamless integration of data analyses, files, figures, text, ...
-* ensure compatibility with markup languages
+  - for all disciplines<br /><br />
+* enable __seamless integration__ of data analyses, files, figures, text, ...<br /><br />
+* ensure __compatibility__ with markup languages<br /><br />
 
--> produce __standalone__ HTML/PDF
+`r fa(name = "arrow-circle-right", fill="grey", height = "20px")` produce __standalone__ HTML/PDF
+
+
 
 ## preregRS | R package
 
-preregRS = R Markdown template (install via package)
+<div class="container">
+<div class="box60">
+preregRS = R Markdown template (install via [R-package](https://github.com/j-5chneider/preregRS))
 
-* provides structure: synthesize the structure of PROSPERO, PRISMA-P and MARS
-* guides users through the process (additional information on standards available)
-* fill out like a form: provides placeholders
-* Rmd enables you to 
-  - include R code (e.g. for power analyses, planned analysis code) and its output
-  - encode files (e.g. separate coding system)
-  - include figures, iframes, latex, ...
-  - include interactive content (e.g. plotly)
-  - compile to standalone HTML/PDF
+* provides __structure__: synthesized <br />PROSPERO, PRISMA-P and MARS
+
+</div>
+
+<div class="box40"></div>
+</div>
+
+<div id="sec-tab"></div>
+
+## preregRS | R package
+
+<div class="container">
+<div class="box60">
+preregRS = R Markdown template (install via [R-package](https://github.com/j-5chneider/preregRS))
+
+* provides __structure__: synthesized <br />PROSPERO, PRISMA-P and MARS<br /><br />
+* __guides__ with additional information
+
+</div>
+
+<div class="box40"></div>
+</div>
+
+<div id="add-info"></div>
+
+
+## preregRS | R package
+
+<div class="container">
+<div class="box60">
+preregRS = R Markdown template (install via [R-package](https://github.com/j-5chneider/preregRS))
+
+* provides __structure__: synthesized <br />PROSPERO, PRISMA-P and MARS<br /><br />
+* __guides__ with additional information<br /><br />
+* fill out like a form: provides __placeholders__
+
+</div>
+
+<div class="box40"></div>
+</div>
+
+<div id="add-text"></div>
+
+
+## preregRS | R package
+
+<div class="container">
+<div class="box60">
+preregRS = R Markdown template (install via [R-package](https://github.com/j-5chneider/preregRS))
+
+* provides __structure__: synthesized <br />PROSPERO, PRISMA-P and MARS<br /><br />
+* __guides__ with additional information<br /><br />
+* fill out like a form: provides __placeholders__<br /><br />
+* R Markdown enables us to... 
+
+<span style="margin-left:50px;">
+`r fa(name = "file-code", fill="grey", height = "20px")` include R __code__ and its __output__<br />
+</span>
+<span style="margin-left:50px;">
+`r fa(name = "file-pdf", fill="grey", height = "20px")` encode __files__ (e.g. separate coding system)<br />
+</span>
+<span style="margin-left:50px;">
+`r fa(name = "chart-area", fill="grey", height = "20px")` include __figures__, iframes, latex, ...<br />
+</span>
+<span style="margin-left:50px;">
+`r fa(name = "hand-pointer", fill="grey", height = "20px")` include __interactive__ content (e.g. plotly)<br />
+</span>
+
+</span>
+<span style="margin-left:50px;"></div>
+
+<div class="box40" style="margin-top:30%">
+<br />
+`r fa(name = "file-export", fill="grey", height = "30px")` compile to __standalone__ file
+</div>
+</div>
+
+<div class="notes">
+
+* __guides__ users through the process (additional information on standards available)
+* R Code: (e.g. for power analyses, planned analysis code) 
+
+</div>
+
 
 # Demo
 
@@ -103,9 +236,14 @@ preregRS = R Markdown template (install via package)
 
 ## Demo | check out...
 
-1. an empty template (compiled to HTML): [bit.ly/preregRS-HTML](https://bit.ly/preregRS-HTML)  
-2. a Jupyter-Notebook with preregRS template available: [bit.ly/preregRS-jupyter](https://bit.ly/preregRS-jupyter)  
-3. an example of a preregistration: [bit.ly/preregRS-example](https://bit.ly/preregRS-example)  
+1. an empty template (compiled to HTML): [bit.ly/preregRS-HTML](https://bit.ly/preregRS-HTML)  <br /><br />
+2. a Jupyter-Notebook with preregRS template available: [bit.ly/preregRS-jupyter](https://bit.ly/preregRS-jupyter)  <br /><br />
+3. a partial example of a preregistration: [bit.ly/preregRS-example](https://bit.ly/preregRS-example)  
+
+
+## Further developments
+
+* Increase usability & accessibility outside of R<br />_e.g. [JBI SUMARI](https://www.jbisumari.org/#tutorials)_
 
 
 # {-}
@@ -120,5 +258,5 @@ __Images:__
 (in order of appearance)  
   
 <span style="font-size:.7em;">
-
+title page | icons from [fontawesome.com CC-BY 4.0](https://fontawesome.com/license/free)
 </span>
