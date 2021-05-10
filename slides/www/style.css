@@ -2,6 +2,11 @@ strong {
   color: #237986;
 }
 
+.hanging {
+ text-indent: -25px;
+ margin-left: 25px;
+}
+
 slides > slide:not(.nobackground):after {
   content: '';
 }
@@ -251,6 +256,61 @@ slides > slide.backdrop {
   height: 100%;
   background-image: url("add-text.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+
+#choices {
+  position: absolute;
+  left: 66%;
+  top:0;
+  width: 34%;
+  height: 100%;
+  background-image: url("choices.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+
+#prereg-bg {
+  position: absolute;
+  left: 66%;
+  top:0;
+  width: 34%;
+  height: 100%;
+  background-image: url("prereg-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+
+#solutions {
+  position: absolute;
+  left: 66%;
+  top:0;
+  width: 34%;
+  height: 100%;
+  background-image: url("solutions.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  z-index: -1;
+}
+
+#aims {
+  position: absolute;
+  left: 66%;
+  top:0;
+  width: 34%;
+  height: 100%;
+  background-image: url("aims.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
   z-index: -1;
