@@ -18,4 +18,14 @@ HELLO :)
 
 - Please open the file 'preregRS.Rmd'.
 - In order to compile 'preregRS.Rmd' to HTML click on the 'knit' button above the editor pane.
+
+
+############################################################################
+##                                ##########################################
+##   SLIDES                       ##########################################
+##                                ##########################################
+############################################################################
+
+- see folder 'slides'
+- HTML format is preferable (to PDF), as links will work and pictures are included
 ")
