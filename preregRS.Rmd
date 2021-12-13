@@ -25,7 +25,7 @@ output:
 ---
 
 ```{css, echo=FALSE}
-/* THIS IS THE STYLING OF THE HTML */ 
+/* THIS IS THE STYLING OF THE HTML */  
   
 /* collapsable sources with buttons */
 .collapse.in {
